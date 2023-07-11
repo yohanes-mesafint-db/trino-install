@@ -31,7 +31,7 @@ server:
         path: ""
     # Trino supports multiple authentication types: PASSWORD, CERTIFICATE, OAUTH2, JWT, KERBEROS
     # For more info: https://trino.io/docs/current/security/authentication-types.html
-    authenticationType: ""
+    authenticationType: "PASSWORD"
     query:
       maxMemory: "4GB"
   exchangeManager:
@@ -132,7 +132,7 @@ service:
 auth:
   # Set username and password
   # https://trino.io/docs/current/security/password-file.html#file-format
-  passwordAuth: "test:$2y$10$BqTb8hScP5DfcpmHo5PeyugxHz5Ky/qf3wrpD7SNm8sWuA3VlGqsa"
+  passwordAuth: "test:1000:5b4240333032306164:f38d165fce8ce42f59d366139ef5d9e1ca1247f0e06e503ee1a611dd9ec40876bb5edb8409f5abe5504aab6628e70cfb3d3a18e99d70357d295002c3d0a308a0"
 
 serviceAccount:
   # Specifies whether a service account should be created
