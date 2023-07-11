@@ -129,10 +129,10 @@ service:
   type: ClusterIP
   port: 8080
 
-auth: {}
+auth:
   # Set username and password
   # https://trino.io/docs/current/security/password-file.html#file-format
-  # passwordAuth: "username:encrypted-password-with-htpasswd"
+  passwordAuth: "test:$2y$10$BqTb8hScP5DfcpmHo5PeyugxHz5Ky/qf3wrpD7SNm8sWuA3VlGqsa"
 
 serviceAccount:
   # Specifies whether a service account should be created
